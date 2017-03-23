@@ -1,7 +1,7 @@
 #include "BlackCrow.h"
 #include "Base.h"
 #include "Area.h"
-
+#include "Worker.h"
 
 namespace BlackCrow {
 

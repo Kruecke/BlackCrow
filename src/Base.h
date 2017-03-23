@@ -1,7 +1,7 @@
 #pragma once
 #include <BWAPI.h>
 #include <BWEM/bwem.h>
-#include "Worker.h"
+//#include "Worker.h"
 #include "Geyser.h"
 #include "Mineral.h"
 

@@ -1,11 +1,11 @@
 #pragma once
 #include <BWAPI.h>
+#include "Base.h" // include needed for std::reference_wrapper
 #include "Mineral.h"
 #include "Geyser.h"
 
 namespace BlackCrow {
 
-	class Base;
 	class Mineral;
 	class Geyser;
 
@@ -21,7 +21,7 @@ namespace BlackCrow {
 		};
 
 		BWAPI::Unit unit;
-		Base& base;
+		std::reference_wrapper<Base> base;
 		MiningTarget miningTarget = MiningTarget::NONE;
 		Mineral* mineral = nullptr;
 		Geyser* geyser = nullptr;

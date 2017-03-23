@@ -6,7 +6,8 @@ namespace BlackCrow {
 	Mineral::Mineral(BWEM::Mineral& mineral) : bwemMineral(&mineral) {}
 
 	bool Mineral::exists() {
-		return bwemMineral;
+		assert(bwemMineral != nullptr);
+		return bwemMineral->Unit()->exists();
 	}
 
 	void Mineral::addWorker(Worker& worker) {
