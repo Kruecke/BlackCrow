@@ -3,6 +3,7 @@
 #include "Base.h" // include needed for std::reference_wrapper
 #include "Mineral.h"
 #include "Geyser.h"
+#include "Base.h"
 
 namespace BlackCrow {
 
@@ -12,7 +13,6 @@ namespace BlackCrow {
 	class Worker {
 	public:
 		Worker(BWAPI::Unit worker, Base& base);
-
 
 		enum class MiningTarget {
 			MINERAL,
